@@ -1,12 +1,25 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+
+import Layout from '@common/components/Layout';
+import ProductCard from '@common/components/ProductCard';
 
 const HomePage = () => {
   return (
-    <Container maxWidth="sm">
-      <div>This is inside a container</div>
-    </Container>
+    <Layout>
+      <Container maxWidth="sm">
+        <div>This is inside a container</div>
+        <Grid container spacing={2}>
+          <Grid item xs={6} sm={6}>
+            <ProductCard />
+          </Grid>
+          <Grid item xs={6} sm={6}>
+            <ProductCard />
+          </Grid>
+        </Grid>
+      </Container>
+    </Layout>
   )
 }
 
