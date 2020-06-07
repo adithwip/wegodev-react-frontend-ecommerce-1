@@ -2,9 +2,18 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@common/*": ["modules/common/*"],
-      "@desktop/*": ["modules/desktop/*"],
-      "@mobile/*": ["modules/mobile/*"]
+      "@common/*": [
+        "modules/common/*"
+      ],
+      "@desktop/*": [
+        "modules/desktop/*"
+      ],
+      "@mobile/*": [
+        "modules/mobile/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
     }
   }
 }
