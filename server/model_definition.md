@@ -1,5 +1,5 @@
 creator = wegodev
-products[0]
+list[0]
   id num = 1
   name = Asparagus
   img = https://i.ibb.co/4m50NPZ/asparagus.jpg
@@ -7,14 +7,12 @@ products[0]
   quantity number = 100
   sold number = 60
   rating number = 4.5
-  promo
-    freeShipping b = true
-    cashback b = false
+  promo[] s = FREESHIPPING
   seen number = 100
   weight = 200gr
   condition = NEW
   description =  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling
-products[1]
+list[1]
   id num = 2
   name = Morning Glory
   img = https://i.ibb.co/94PQTzP/morning-glory.jpg
@@ -22,14 +20,12 @@ products[1]
   quantity number = 90
   sold number = 50
   rating number = 4.7
-  promo
-    freeShipping b = false
-    cashback b = false
+  promo[] s = CASHBACK
   seen number = 100
   weight = 200gr
   condition = NEW
   description =  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling
-products[2]
+list[2]
   id num = 3
   name = Brussel Sprouts
   img = https://i.ibb.co/FsvjPWx/brussel-sprouts.jpg
@@ -37,14 +33,12 @@ products[2]
   quantity number = 20
   sold number = 10
   rating number = 4.1
-  promo
-    freeShipping b = false
-    cashback b = true
+  promo[] s = FREESHIPPING  
   seen number = 80
   weight = 200gr
   condition = NEW
   description =  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling
-products[3]
+list[3]
   id num = 4
   name = Carrots
   img = https://i.ibb.co/2q7s6QM/carrots.jpg
@@ -52,14 +46,12 @@ products[3]
   quantity number = 200
   sold number = 100
   rating number = 4.2
-  promo
-    freeShipping b = false
-    cashback b = true
+  promo[] s = CASHBACK
   seen number = 120
   weight = 100gr
   condition = NEW
   description =  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling
-products[4]
+list[4]
   id num = 5
   name = Fresh Gingers
   img = https://i.ibb.co/wr1YMsb/ginger.jpg
@@ -67,14 +59,12 @@ products[4]
   quantity number = 200
   sold number = 100
   rating number = 4.1
-  promo
-    freeShipping b = false
-    cashback b = true
+  promo[] s = FREESHIPPING, CASHBACK
   seen number = 200
   weight = 200gr
   condition = NEW
   description =  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling
-products[5]
+list[5]
   id num = 6
   name = Fresh Gingers
   img = https://i.ibb.co/JcWSLCj/chili.jpg
@@ -82,14 +72,12 @@ products[5]
   quantity number = 200
   sold number = 100
   rating number = 4.6
-  promo
-    freeShipping b = false
-    cashback b = true
+  promo[] s 
   seen number = 200
   weight = 100gr
   condition = NEW
   description =  A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling
-products[6]
+list[6]
   id num = 7
   name = Water Spinach
   img = https://i.ibb.co/tZC9nrB/spinach.jpg
@@ -97,9 +85,7 @@ products[6]
   quantity number = 200
   sold number = 100
   rating number = 4.6
-  promo
-    freeShipping b = false
-    cashback b = true
+  promo[] s = FREESHIPPING, CASHBACK
   seen number = 340
   weight = 100gr
   condition = NEW
