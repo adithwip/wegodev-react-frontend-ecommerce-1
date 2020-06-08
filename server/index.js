@@ -16,7 +16,7 @@ app.use(cors());
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/products', (req, res) => {
-  res.send(products)
+  res.send(JSON.stringify(products));
 })
 
 app.get('/products/:id', (req, res) => {
@@ -24,5 +24,5 @@ app.get('/products/:id', (req, res) => {
   const productList = products.list;
   const productBasedOnID = productList.filter(prod => prod.id === productID);
 
-  res.send(productBasedOnID.pop());
+  res.send(JSON.stringify(productBasedOnID.pop()));
 })
