@@ -18,3 +18,11 @@ app.get('/', (req, res) => res.send('Hello World!'))
 app.get('/products', (req, res) => {
   res.send(products)
 })
+
+app.get('/products/:id', (req, res) => {
+  const productID = Number(req.params.id);
+  const productList = products.list;
+  const productBasedOnID = productList.filter(prod => prod.id === productID);
+
+  res.send(productBasedOnID.pop());
+})
