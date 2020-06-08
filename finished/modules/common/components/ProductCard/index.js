@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
@@ -37,34 +38,36 @@ const useStyles = makeStyles({
   }
 });
 
-const ProductCard = ({ img, title, promoLabel, price, rating, sold }) => {
+const ProductCard = ({ img, title, promoLabel, price, rating, sold, productID }) => {
   const classes = useStyles();
   console.log('rating', rating)
 
   return (
-    <Card className={classes.card}>
-      <div className={classes.relative}>
-        <CardMedia
-          className={classes.image}
-          image={img}
-          title={title}
-        />
-        <div className={classes.promoLabel}>
-          <PromoLabel promoLabel={promoLabel} />
+    <Link href="/product/[id]" as={`/product/${productID}`}>
+      <Card className={classes.card}>
+        <div className={classes.relative}>
+          <CardMedia
+            className={classes.image}
+            image={img}
+            title={title}
+          />
+          <div className={classes.promoLabel}>
+            <PromoLabel promoLabel={promoLabel} />
+          </div>
         </div>
-      </div>
-      <CardContent className={classes.cardContent}>
-        <Grid container direction="column">
-          <Typography gutterBottom variant="subtitle2" component="h2">
-            {title}
-          </Typography>
-          <Typography variant="overline" className={classes.price}>
-            {currencyFormatter(price)}
-          </Typography>
-          <ProductRating rating={rating} sold={sold} />
-        </Grid>
-      </CardContent>
-    </Card>
+        <CardContent className={classes.cardContent}>
+          <Grid container direction="column">
+            <Typography gutterBottom variant="subtitle2" component="h2">
+              {title}
+            </Typography>
+            <Typography variant="overline" className={classes.price}>
+              {currencyFormatter(price)}
+            </Typography>
+            <ProductRating rating={rating} sold={sold} />
+          </Grid>
+        </CardContent>
+      </Card>
+    </Link>
   );
 }
 
@@ -75,6 +78,7 @@ ProductCard.propTypes = {
   price: PropTypes.number.isRequired,
   rating: PropTypes.number,
   sold: PropTypes.sold,
+  productID: PropTypes.number.isRequired,
 }
 
 export default ProductCard;

@@ -17,6 +17,7 @@ const HomePage = ({ products }) => {
             return (
               <Grid key={list.id} item xs={6} sm={6}>
                 <ProductCard
+                  productID={list.id}
                   img={list.img}
                   title={list.name}
                   promoLabel={list.promo}
@@ -34,7 +35,7 @@ const HomePage = ({ products }) => {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:5000/products');
+  const res = await fetch(`http://localhost:5000/products`);
   const products = await res.json();
 
   return {
