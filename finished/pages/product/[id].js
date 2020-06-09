@@ -3,13 +3,29 @@ import React from 'react';
 import Layout from '@common/components/Layout';
 import Container from '@material-ui/core/Container';
 
+import ProductDetailCard from '@mobile/components/ProductDetailCard';
+
 const ProductDetail = ({ product }) => {
-  console.log(product);
+  const {
+    name,
+    img,
+    price,
+    rating,
+    sold,
+    description,
+  } = product;
 
   return (
     <Layout>
       <Container maxWidth="sm">
-        <div>Hello</div>
+        <ProductDetailCard
+          img={img}
+          title={name}
+          price={price}
+          rating={rating}
+          sold={sold}
+          description={description}
+        />
       </Container>
     </Layout>
   )
@@ -27,8 +43,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const res = await fetch(`http://localhost:5000/products/${params.id}`);
   const product = await res.json();
-
-  console.log("product ===>", product)
 
   return {
     props: { product }
