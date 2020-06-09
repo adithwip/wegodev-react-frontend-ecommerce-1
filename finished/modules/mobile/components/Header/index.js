@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import ToolBar from '@material-ui/core/Toolbar';
@@ -25,9 +26,11 @@ const Header = () => {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6">
-            Ecommerce Frontend
-          </Typography>
+          <Link href="/">
+            <Typography variant="h6">
+              Ecommerce Frontend
+              </Typography>
+          </Link>
         </ToolBar>
       </AppBar>
     </div>

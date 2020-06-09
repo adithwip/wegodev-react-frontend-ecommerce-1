@@ -40,7 +40,6 @@ const useStyles = makeStyles({
 
 const ProductCard = ({ img, title, promoLabel, price, rating, sold, productID }) => {
   const classes = useStyles();
-  console.log('rating', rating)
 
   return (
     <Link href="/product/[id]" as={`/product/${productID}`}>
@@ -77,7 +76,7 @@ ProductCard.propTypes = {
   promoLabel: PropTypes.array,
   price: PropTypes.number.isRequired,
   rating: PropTypes.number,
-  sold: PropTypes.sold,
+  sold: PropTypes.number,
   productID: PropTypes.number.isRequired,
 }
 
