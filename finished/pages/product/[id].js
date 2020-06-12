@@ -13,6 +13,10 @@ const ProductDetail = ({ product }) => {
     rating,
     sold,
     description,
+    quantity,
+    condition,
+    weight,
+    promo,
   } = product;
 
   return (
@@ -25,6 +29,10 @@ const ProductDetail = ({ product }) => {
           rating={rating}
           sold={sold}
           description={description}
+          quantity={quantity}
+          condition={condition}
+          weight={weight}
+          promo={promo}
         />
       </Container>
     </Layout>
