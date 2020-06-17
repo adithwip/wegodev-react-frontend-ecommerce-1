@@ -13,6 +13,9 @@
       ],
       "@utils/*": [
         "utils/*"
+      ],
+      "@server/*": [
+        "modules/server/*"
       ]
     }
   }
