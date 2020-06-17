@@ -26,8 +26,6 @@ const Header = () => {
     setOpen(!open);
   }
 
-  console.log(open)
-
   return (
     <div className={classes.root}>
       <AppBar position="fixed">

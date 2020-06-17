@@ -86,7 +86,7 @@ const SideBar = ({ open, onClose }) => {
           {
             relatedCoursesObj.map(obj => {
               return (
-                <Grid item>
+                <Grid key={obj.name} item>
                   <a
                     href={obj.url}
                     target="_blank"
